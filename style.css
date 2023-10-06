@@ -71,6 +71,10 @@ p {
   margin: 0 auto;
 }
 
+.animated-element {
+  opacity: 0;
+}
+
 .site-header {
   position: relative;
   z-index: 10;
@@ -392,6 +396,68 @@ p {
 }
 .optin .container form input[type=submit]:hover {
   background-color: #0069d9;
+}
+
+.usefulness {
+  background-color: #193549;
+}
+.usefulness .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.usefulness .container .item {
+  background-color: #122736;
+  border: 1px solid #0e212e;
+  border-radius: 4px;
+  padding: 20px 10px;
+}
+.usefulness .container .item img {
+  display: grid;
+  margin: 0 auto;
+}
+.usefulness .container .item p {
+  font-family: "Jost", sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 10px 0 0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.usefulness .container .item.animate {
+  -webkit-animation: fadeIn 2s ease-in;
+          animation: fadeIn 2s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.features {
+  background-color: #FFFFFF;
+}
+.features .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.features .container .item {
+  background-color: #DEE1E6;
+  padding: 20px;
+}
+.features .container .item:nth-child(2) {
+  grid-row: span 2;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0;
+}
+.features .container .item p {
+  color: #193549;
+}
+.features .container .item img {
+  max-width: 100%;
 }
 
 @-webkit-keyframes imgRotation {

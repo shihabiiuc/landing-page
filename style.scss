@@ -104,6 +104,7 @@ p {
       display: block;
     }
     ul {
+      animation: fadeIn 2s ease-in-out;
       position: absolute; /* to prevent content pushing down */
       width: 100%;
       background-color: rgba($color: #DEF0FF, $alpha: 0.95);
@@ -571,9 +572,10 @@ footer.footer {
   .social-media-links {
     position: relative;
     margin-top: 60px;   
-    ul {
+    ul.list {
       max-width: 60%;
       margin: 0 auto;
+      padding: 0;
       display: flex;
       justify-content: space-evenly;
       align-items: center;

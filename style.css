@@ -135,6 +135,8 @@ p {
   }
 }
 .nav .nav-links ul {
+  -webkit-animation: fadeIn 2s ease-in-out;
+          animation: fadeIn 2s ease-in-out;
   position: absolute; /* to prevent content pushing down */
   width: 100%;
   background-color: rgba(222, 240, 255, 0.95);
@@ -679,9 +681,10 @@ footer.footer .social-media-links {
   position: relative;
   margin-top: 60px;
 }
-footer.footer .social-media-links ul {
+footer.footer .social-media-links ul.list {
   max-width: 60%;
   margin: 0 auto;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,7 +695,7 @@ footer.footer .social-media-links ul {
       -ms-flex-align: center;
           align-items: center;
 }
-footer.footer .social-media-links ul::before {
+footer.footer .social-media-links ul.list::before {
   width: 20%;
   position: absolute;
   content: "";
@@ -700,7 +703,7 @@ footer.footer .social-media-links ul::before {
   top: 50%;
   left: 0;
 }
-footer.footer .social-media-links ul::after {
+footer.footer .social-media-links ul.list::after {
   width: 20%;
   position: absolute;
   content: "";
@@ -708,14 +711,14 @@ footer.footer .social-media-links ul::after {
   top: 50%;
   right: 0;
 }
-footer.footer .social-media-links ul li {
+footer.footer .social-media-links ul.list li {
   list-style: none;
 }
-footer.footer .social-media-links ul li a img {
+footer.footer .social-media-links ul.list li a img {
   max-width: 20px;
 }
 @media (min-width: 768px) {
-  footer.footer .social-media-links ul li a img {
+  footer.footer .social-media-links ul.list li a img {
     max-width: 30px;
   }
 }

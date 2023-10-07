@@ -1,3 +1,4 @@
+// NAVIGATION MENU
 document.addEventListener('DOMContentLoaded', function() {
   const hamburgers = document.querySelectorAll('.hamburger')
   const mobileNavs = document.getElementsByClassName('nav-links')[0]  
